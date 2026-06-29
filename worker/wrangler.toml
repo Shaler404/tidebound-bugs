@@ -7,6 +7,12 @@ compatibility_date = "2025-01-01"
 GH_OWNER = "Shaler404"
 GH_REPO = "tidebound-bugs"
 
+# Persistent logs. With this on, console.log/console.error are RETAINED and queryable in the
+# Cloudflare dashboard (Workers & Pages > tidebound-bug-worker > Observability / Logs) — so a
+# background (ctx.waitUntil) GitHub failure is visible AFTER the fact, without a live `wrangler tail`.
+[observability]
+enabled = true
+
 # SECRETS — NOT stored here. Set them at deploy with:
 #   npx wrangler secret put GH_TOKEN     (fine-grained PAT: Contents + Issues R/W on tidebound-bugs)
 #   npx wrangler secret put REPORT_KEY   (shared anti-abuse key; MUST match the Unity BugReportConfig.reportKey)

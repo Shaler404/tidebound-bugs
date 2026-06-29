@@ -9,6 +9,7 @@ on:
 permissions:
   contents: read
   issues: write
+  id-token: write   # required by claude-code-action@v1 to mint its OIDC token
 
 jobs:
   triage:
@@ -40,12 +41,12 @@ jobs:
 
             TASK:
             - Read the CURRENT description of this issue AND every comment on it.
-            - The report attaches three files (linked in the issue body, also committed in this repo
-              under `assets/`): `save.json.gz` (the CURRENT game state), `last_save.json.gz` (the
-              PREVIOUS on-disk save), and `commands.json` (the player commands since the last save).
-              The `.gz` files are gzip-compressed JSON — GUNZIP them before reading (for example
-              `gunzip -c save.json.gz`). Also read the `meta` block (platform, version, device,
-              recentLogs).
+            - The report attaches files (linked in the issue body, also committed in this repo under
+              `assets/`; some may be absent): `save.json.gz` (the CURRENT game state),
+              `last_save.json.gz` (the PREVIOUS on-disk save), `commands.json` (the player commands
+              since the last save), and `logs.txt` (the full in-game console log). The `.gz` files are
+              gzip-compressed JSON — GUNZIP them before reading (for example `gunzip -c save.json.gz`).
+              Also read the `meta` block (platform, version, device info).
             - The private game source is checked out at `./game` — use grep / file reads there to find
               the affected systems and the specific files.
             - Reply with EXACTLY ONE comment, in ENGLISH, with this structure:

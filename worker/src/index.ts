@@ -3,23 +3,27 @@
  *
  * POST /report  (multipart/form-data, header X-Report-Key)
  *   fields:
- *     save        (file, gzipped JSON — CURRENT game state)   REQUIRED
- *     lastSave    (file, gzipped JSON — PREVIOUS on-disk save) optional
- *     commands    (text, JSON — player commands since last save) optional
- *     description (text)                                       REQUIRED
- *     meta        (text/json)                                  REQUIRED
+ *     save        (file, gzipped JSON — CURRENT game state)        REQUIRED
+ *     lastSave    (file, gzipped JSON — PREVIOUS on-disk save)      optional
+ *     commands    (text, JSON — player commands since last save)    optional
+ *     logs        (file, gzipped text — console log ring buffer)    optional
+ *     description (text)                                            REQUIRED
+ *     meta        (text/json — scalars only, no logs)              REQUIRED
  *
  * Flow:
  *   1. gate on X-Report-Key === env.REPORT_KEY
- *   2. parse multipart, pull the parts
+ *   2. parse multipart, read ALL parts into memory
  *   3. validate (save present + < 5 MB; description non-empty; meta parses JSON)
- *   4. commit save.json.gz / last_save.json.gz / commands.json under assets/<YYYY-MM-DD>/<uuid>/
- *   5. open an issue (title from META only + body template + labels:["bug-report"])
- *   6. respond 200 {ok,issueNumber,issueUrl}
+ *   4. ACK the client immediately ({ ok: true }) — the GitHub round-trip runs in the
+ *      background via ctx.waitUntil(fileReport(...)), so the client waits ONLY for the upload.
+ *   5. fileReport (background): commit save.json.gz / last_save.json.gz / commands.json /
+ *      logs.txt under assets/<YYYY-MM-DD>/<uuid>/ then open an issue. Failures are swallowed
+ *      and logged (visible via `wrangler tail`) — the client never learns the issue number.
  *
  * Web/Fetch APIs ONLY (no Node-only globals — no Buffer). Binary parts are read with
- * `(field as File).arrayBuffer()`; base64 of raw bytes via base64Bytes; base64 of UTF-8 text via
- * base64Utf8. No private data (token, save body) ever placed in a URL param.
+ * `(field as File).arrayBuffer()`; gzip is undone with DecompressionStream("gzip"); base64 of raw
+ * bytes via base64Bytes; base64 of UTF-8 text via base64Utf8. No private data (token, save body)
+ * ever placed in a URL param.
  */
 
 interface Env {
@@ -41,7 +45,7 @@ function json(body: unknown, status = 200): Response {
   });
 }
 
-/** UTF-8 text → base64 using Web APIs only (TextEncoder + btoa). For text parts (commands.json). */
+/** UTF-8 text → base64 using Web APIs only (TextEncoder + btoa). For text parts (commands.json, logs.txt). */
 function base64Utf8(text: string): string {
   const bytes = new TextEncoder().encode(text);
   return base64Bytes(bytes);
@@ -49,8 +53,8 @@ function base64Utf8(text: string): string {
 
 /**
  * Raw bytes → base64 using Web APIs only (btoa over a binary string). For BINARY parts: the gzipped
- * save / lastSave arrive as bytes (`arrayBuffer()`), and GitHub's Contents API wants base64 of those
- * exact bytes — NOT base64 of any text decoding (which would corrupt the gzip stream).
+ * save / lastSave / logs arrive as bytes (`arrayBuffer()`), and GitHub's Contents API wants base64 of
+ * those exact bytes — NOT base64 of any text decoding (which would corrupt the gzip stream).
  */
 function base64Bytes(bytes: Uint8Array): string {
   let binary = "";
@@ -58,6 +62,15 @@ function base64Bytes(bytes: Uint8Array): string {
     binary += String.fromCharCode(bytes[i]);
   }
   return btoa(binary);
+}
+
+/**
+ * Gunzip gzipped bytes → UTF-8 text using Web APIs only (DecompressionStream). The client gzips the
+ * console log; the repo wants logs.txt human-readable, so the Worker inflates it here.
+ */
+async function gunzipText(bytes: Uint8Array): Promise<string> {
+  const stream = new Response(bytes).body!.pipeThrough(new DecompressionStream("gzip"));
+  return await new Response(stream).text();
 }
 
 /** GitHub REST headers — token in the header, never the URL. */
@@ -94,7 +107,7 @@ function issueTitle(meta: Record<string, unknown>): string {
 }
 
 // GitHub rejects an issue body over 65536 chars with a 422 ("body is too long"). Stay well under it;
-// the FULL recentLogs ship as the logs.txt attachment, the body shows only a small tail.
+// the FULL log ships as the logs.txt attachment, the body shows only a small tail.
 const MAX_BODY_CHARS = 60000;
 const LOG_TAIL_CHARS = 6000;
 
@@ -105,6 +118,7 @@ function issueBody(
   commandsUrl: string,
   logsUrl: string,
   meta: Record<string, unknown>,
+  logsLines: string[],
 ): string {
   // description as a blockquote (each line prefixed with "> "). The BODY may still show the
   // description (only the TITLE must not contain it).
@@ -113,7 +127,8 @@ function issueBody(
     .map((line) => `> ${line}`)
     .join("\n");
 
-  // meta table — every key EXCEPT recentLogs
+  // meta table — every key EXCEPT recentLogs (logs now ship in their own gzipped part; the skip
+  // stays defensively in case an older client still folds recentLogs into meta).
   const rows: string[] = ["| Field | Value |", "| --- | --- |"];
   for (const key of Object.keys(meta)) {
     if (key === "recentLogs") continue;
@@ -126,8 +141,8 @@ function issueBody(
 
   // recentLogs: the FULL set is the logs.txt attachment (it can be hundreds of KB). Embed only the
   // most recent ~LOG_TAIL_CHARS for at-a-glance context (backticks neutralized so logs can't break
-  // out of the fence).
-  const logs = Array.isArray(meta.recentLogs) ? (meta.recentLogs as unknown[]) : [];
+  // out of the fence). Sourced from the gunzipped log LINES now, not meta.
+  const logs = logsLines;
   const tail: string[] = [];
   let tailChars = 0;
   for (let i = logs.length - 1; i >= 0 && tailChars < LOG_TAIL_CHARS; i--) {
@@ -212,67 +227,49 @@ async function commitFile(
   return putJson.content?.download_url ?? "";
 }
 
-async function handleReport(request: Request, env: Env): Promise<Response> {
-  // 1. auth gate
-  const key = request.headers.get("X-Report-Key");
-  if (!key || key !== env.REPORT_KEY) {
-    return json({ ok: false, error: "unauthorized" }, 401);
-  }
+/** The validated, in-memory report payload handed to the background filer. */
+interface ReportData {
+  prefix: string;
+  today: string;
+  saveBytes: Uint8Array;
+  lastSaveBytes: Uint8Array | null;
+  commandsText: string;
+  logsBytes: Uint8Array | null;
+  description: string;
+  meta: Record<string, unknown>;
+}
 
-  // 2. parse multipart
-  let form: FormData;
+/**
+ * Background filer: commit the attachments and open the issue. Runs OFF the client's request path via
+ * ctx.waitUntil, so a slow GitHub round-trip never blocks the in-game send. The WHOLE thing is wrapped
+ * so it never throws to the (already-acked) client — every failure is logged and swallowed, visible
+ * through `wrangler tail`. The per-stage GitHub error logging (commitFile + the issue POST) is kept.
+ */
+async function fileReport(env: Env, data: ReportData): Promise<void> {
   try {
-    form = await request.formData();
-  } catch (err) {
-    return json({ ok: false, error: "parse: bad multipart body" }, 400);
-  }
+    const { prefix, today, saveBytes, lastSaveBytes, commandsText, logsBytes, description, meta } = data;
 
-  const description = String(form.get("description") ?? "");
-  const metaRaw = String(form.get("meta") ?? "");
-  const commandsRaw = form.get("commands");
-  const commandsText = typeof commandsRaw === "string" ? commandsRaw : "";
+    // Inflate the gzipped log part to plain LINES once: used both for the human-readable logs.txt
+    // commit and for the issue-body tail.
+    let logsLines: string[] = [];
+    if (logsBytes && logsBytes.length > 0) {
+      try {
+        const logsText = await gunzipText(logsBytes);
+        logsLines = logsText.length > 0 ? logsText.split("\n") : [];
+      } catch (err) {
+        console.error("logs gunzip failed", err);
+        logsLines = [];
+      }
+    }
 
-  // Read the binary save parts (gzipped bytes).
-  let saveBytes: Uint8Array | null;
-  let lastSaveBytes: Uint8Array | null;
-  try {
-    saveBytes = await readBytes(form, "save");
-    lastSaveBytes = await readBytes(form, "lastSave");
-  } catch (err) {
-    return json({ ok: false, error: `parse: could not read save parts (${String(err)})` }, 400);
-  }
+    // Commit the attachments via the Contents API. The save/lastSave bytes are already gzipped —
+    // base64 the RAW bytes (base64Bytes). The log is committed as PLAIN text (gunzipped → base64Utf8)
+    // so the repo file is human-readable.
+    let saveUrl = "";
+    let lastSaveUrl = "";
+    let commandsUrl = "";
+    let logsUrl = "";
 
-  // 3. validate
-  if (!saveBytes) {
-    return json({ ok: false, error: "validation: save file missing" }, 400);
-  }
-  if (saveBytes.length >= MAX_PART_BYTES) {
-    return json({ ok: false, error: "validation: save too large" }, 400);
-  }
-  if (lastSaveBytes && lastSaveBytes.length >= MAX_PART_BYTES) {
-    return json({ ok: false, error: "validation: lastSave too large" }, 400);
-  }
-  if (description.trim().length === 0) {
-    return json({ ok: false, error: "validation: description is empty" }, 400);
-  }
-  let meta: Record<string, unknown>;
-  try {
-    meta = JSON.parse(metaRaw) as Record<string, unknown>;
-  } catch {
-    return json({ ok: false, error: "validation: meta is not valid JSON" }, 400);
-  }
-
-  // 4. path prefix
-  const today = new Date().toISOString().slice(0, 10); // UTC YYYY-MM-DD
-  const prefix = `assets/${today}/${crypto.randomUUID()}/`;
-
-  // 5. commit the attachments via the Contents API. The save bytes are already gzipped — base64 the
-  //    RAW bytes (base64Bytes), never a text decode.
-  let saveUrl = "";
-  let lastSaveUrl = "";
-  let commandsUrl = "";
-  let logsUrl = "";
-  try {
     saveUrl = await commitFile(
       env,
       `${prefix}save.json.gz`,
@@ -295,60 +292,120 @@ async function handleReport(request: Request, env: Env): Promise<Response> {
         `bug: add command journal for ${today}`,
       );
     }
-    // Full console log as a separate text attachment — keeps it OUT of the issue body (which has a
-    // 65536-char limit) while preserving every captured line.
-    const recentLogs = Array.isArray(meta.recentLogs) ? (meta.recentLogs as unknown[]) : [];
-    if (recentLogs.length > 0) {
+    // Full console log as a separate PLAIN-text attachment — keeps it OUT of the issue body (which has
+    // a 65536-char limit) while preserving every captured line, human-readable in the repo.
+    if (logsLines.length > 0) {
       logsUrl = await commitFile(
         env,
         `${prefix}logs.txt`,
-        base64Utf8(recentLogs.map((l) => String(l)).join("\n")),
+        base64Utf8(logsLines.join("\n")),
         `bug: add console log for ${today}`,
       );
     }
-  } catch (err) {
-    console.error("contents commit exception", err);
-    return json({ ok: false, error: `contents: ${String(err)}` }, 500);
-  }
 
-  // 6. create the issue
-  try {
+    // Create the issue.
     const issuesUrl = `${GH_API}/repos/${env.GH_OWNER}/${env.GH_REPO}/issues`;
     const issueRes = await fetch(issuesUrl, {
       method: "POST",
       headers: ghHeaders(env),
       body: JSON.stringify({
         title: issueTitle(meta),
-        body: issueBody(description, saveUrl, lastSaveUrl, commandsUrl, logsUrl, meta),
+        body: issueBody(description, saveUrl, lastSaveUrl, commandsUrl, logsUrl, meta, logsLines),
         labels: ["bug-report"],
       }),
     });
     if (!issueRes.ok) {
       const detail = await issueRes.text();
       console.error("issues POST failed", issueRes.status, detail);
-      return json(
-        { ok: false, error: `issues: github returned ${issueRes.status}: ${detail.slice(0, 400)}` },
-        500,
-      );
+      return;
     }
-    const issueJson = (await issueRes.json()) as { number?: number; html_url?: string };
-    // 7. success
-    return json({
-      ok: true,
-      issueNumber: issueJson.number,
-      issueUrl: issueJson.html_url,
-    });
   } catch (err) {
-    console.error("issues POST exception", err);
-    return json({ ok: false, error: `issues: ${String(err)}` }, 500);
+    console.error("fileReport failed", err);
   }
 }
 
+async function handleReport(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+  // 1. auth gate
+  const key = request.headers.get("X-Report-Key");
+  if (!key || key !== env.REPORT_KEY) {
+    return json({ ok: false, error: "unauthorized" }, 401);
+  }
+
+  // 2. parse multipart
+  let form: FormData;
+  try {
+    form = await request.formData();
+  } catch (err) {
+    return json({ ok: false, error: "parse: bad multipart body" }, 400);
+  }
+
+  const description = String(form.get("description") ?? "");
+  const metaRaw = String(form.get("meta") ?? "");
+  const commandsRaw = form.get("commands");
+  const commandsText = typeof commandsRaw === "string" ? commandsRaw : "";
+
+  // Read the binary parts (gzipped bytes): save, lastSave, logs.
+  let saveBytes: Uint8Array | null;
+  let lastSaveBytes: Uint8Array | null;
+  let logsBytes: Uint8Array | null;
+  try {
+    saveBytes = await readBytes(form, "save");
+    lastSaveBytes = await readBytes(form, "lastSave");
+    logsBytes = await readBytes(form, "logs");
+  } catch (err) {
+    return json({ ok: false, error: `parse: could not read upload parts (${String(err)})` }, 400);
+  }
+
+  // 3. validate
+  if (!saveBytes) {
+    return json({ ok: false, error: "validation: save file missing" }, 400);
+  }
+  if (saveBytes.length >= MAX_PART_BYTES) {
+    return json({ ok: false, error: "validation: save too large" }, 400);
+  }
+  if (lastSaveBytes && lastSaveBytes.length >= MAX_PART_BYTES) {
+    return json({ ok: false, error: "validation: lastSave too large" }, 400);
+  }
+  if (logsBytes && logsBytes.length >= MAX_PART_BYTES) {
+    return json({ ok: false, error: "validation: logs too large" }, 400);
+  }
+  if (description.trim().length === 0) {
+    return json({ ok: false, error: "validation: description is empty" }, 400);
+  }
+  let meta: Record<string, unknown>;
+  try {
+    meta = JSON.parse(metaRaw) as Record<string, unknown>;
+  } catch {
+    return json({ ok: false, error: "validation: meta is not valid JSON" }, 400);
+  }
+
+  // 4. pre-generate the path prefix (date + uuid).
+  const today = new Date().toISOString().slice(0, 10); // UTC YYYY-MM-DD
+  const prefix = `assets/${today}/${crypto.randomUUID()}/`;
+
+  // 5. fire the GitHub work in the BACKGROUND and ack immediately — the client waits only for the
+  //    upload, never the whole GitHub round-trip. The issue number is not known at ack time and is
+  //    deliberately not returned.
+  ctx.waitUntil(
+    fileReport(env, {
+      prefix,
+      today,
+      saveBytes,
+      lastSaveBytes,
+      commandsText,
+      logsBytes,
+      description,
+      meta,
+    }),
+  );
+  return json({ ok: true }, 200);
+}
+
 export default {
-  async fetch(request: Request, env: Env): Promise<Response> {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
     if (request.method === "POST" && url.pathname === "/report") {
-      return handleReport(request, env);
+      return handleReport(request, env, ctx);
     }
     return json({ ok: false, error: "not found" }, 404);
   },
