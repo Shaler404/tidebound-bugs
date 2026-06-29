@@ -84,14 +84,6 @@ function ghHeaders(env: Env): Record<string, string> {
 }
 
 /**
- * Escape backtick runs in a log line so a crafted log cannot break out of the fenced code block /
- * inject markdown. Replaces every backtick with a look-alike so no run of ``` can close the fence.
- */
-function neutralizeBackticks(s: string): string {
-  return s.replace(/`/g, "ˋ"); // MODIFIER LETTER GRAVE ACCENT — visually similar, not a fence char
-}
-
-/**
  * Issue title from META ONLY (never the description, which is untrusted free text):
  *   `[Bug] <platform> <appVersion> · <deviceModel> · <utcShort>`
  * utcShort = meta.timestampUtc trimmed to minutes (guarded when missing → "?").
@@ -106,10 +98,9 @@ function issueTitle(meta: Record<string, unknown>): string {
   return `[Bug] ${platform} ${appVersion} · ${deviceModel} · ${utcShort}`;
 }
 
-// GitHub rejects an issue body over 65536 chars with a 422 ("body is too long"). Stay well under it;
-// the FULL log ships as the logs.txt attachment, the body shows only a small tail.
+// GitHub rejects an issue body over 65536 chars with a 422 ("body is too long"). The full log + the
+// saves are attachments, so the body stays small; this is just a hard backstop for a pathological meta.
 const MAX_BODY_CHARS = 60000;
-const LOG_TAIL_CHARS = 6000;
 
 function issueBody(
   description: string,
@@ -118,7 +109,6 @@ function issueBody(
   commandsUrl: string,
   logsUrl: string,
   meta: Record<string, unknown>,
-  logsLines: string[],
 ): string {
   // description as a blockquote (each line prefixed with "> "). The BODY may still show the
   // description (only the TITLE must not contain it).
@@ -127,7 +117,7 @@ function issueBody(
     .map((line) => `> ${line}`)
     .join("\n");
 
-  // meta table — every key EXCEPT recentLogs (logs now ship in their own gzipped part; the skip
+  // meta table — every key EXCEPT recentLogs (logs ship in their own gzipped part / logs.txt; the skip
   // stays defensively in case an older client still folds recentLogs into meta).
   const rows: string[] = ["| Field | Value |", "| --- | --- |"];
   for (const key of Object.keys(meta)) {
@@ -139,22 +129,8 @@ function issueBody(
   }
   const metaTable = rows.join("\n");
 
-  // recentLogs: the FULL set is the logs.txt attachment (it can be hundreds of KB). Embed only the
-  // most recent ~LOG_TAIL_CHARS for at-a-glance context (backticks neutralized so logs can't break
-  // out of the fence). Sourced from the gunzipped log LINES now, not meta.
-  const logs = logsLines;
-  const tail: string[] = [];
-  let tailChars = 0;
-  for (let i = logs.length - 1; i >= 0 && tailChars < LOG_TAIL_CHARS; i--) {
-    const line = neutralizeBackticks(String(logs[i]));
-    tail.unshift(line);
-    tailChars += line.length + 1;
-  }
-  const tailNote =
-    logs.length > tail.length ? ` _(last ${tail.length} of ${logs.length} lines — full log attached)_` : "";
-  const logsBlock = tail.length > 0 ? `${tailNote}\n\`\`\`\n${tail.join("\n")}\n\`\`\`` : "_(no recent logs)_";
-
-  // Attachment links. The saves are GZIPPED — gunzip them to read the JSON.
+  // Attachment links. The saves are GZIPPED — gunzip them to read the JSON. The FULL console log is the
+  // logs.txt attachment — it is NOT copied into the body (that would just bloat the issue).
   const links: string[] = [];
   if (saveUrl) links.push(`**Current save (gzipped):** [save.json.gz](${saveUrl})`);
   if (lastSaveUrl) links.push(`**Previous save (gzipped):** [last_save.json.gz](${lastSaveUrl})`);
@@ -176,10 +152,6 @@ function issueBody(
     "<details><summary>Meta</summary>",
     "",
     metaTable,
-    "",
-    "**Recent logs**",
-    "",
-    logsBlock,
     "",
     "</details>",
   ].join("\n");
@@ -249,16 +221,14 @@ async function fileReport(env: Env, data: ReportData): Promise<void> {
   try {
     const { prefix, today, saveBytes, lastSaveBytes, commandsText, logsBytes, description, meta } = data;
 
-    // Inflate the gzipped log part to plain LINES once: used both for the human-readable logs.txt
-    // commit and for the issue-body tail.
-    let logsLines: string[] = [];
+    // Inflate the gzipped log part to plain text for the human-readable logs.txt attachment.
+    let logsText = "";
     if (logsBytes && logsBytes.length > 0) {
       try {
-        const logsText = await gunzipText(logsBytes);
-        logsLines = logsText.length > 0 ? logsText.split("\n") : [];
+        logsText = await gunzipText(logsBytes);
       } catch (err) {
         console.error("logs gunzip failed", err);
-        logsLines = [];
+        logsText = "";
       }
     }
 
@@ -294,11 +264,11 @@ async function fileReport(env: Env, data: ReportData): Promise<void> {
     }
     // Full console log as a separate PLAIN-text attachment — keeps it OUT of the issue body (which has
     // a 65536-char limit) while preserving every captured line, human-readable in the repo.
-    if (logsLines.length > 0) {
+    if (logsText.length > 0) {
       logsUrl = await commitFile(
         env,
         `${prefix}logs.txt`,
-        base64Utf8(logsLines.join("\n")),
+        base64Utf8(logsText),
         `bug: add console log for ${today}`,
       );
     }
@@ -310,7 +280,7 @@ async function fileReport(env: Env, data: ReportData): Promise<void> {
       headers: ghHeaders(env),
       body: JSON.stringify({
         title: issueTitle(meta),
-        body: issueBody(description, saveUrl, lastSaveUrl, commandsUrl, logsUrl, meta, logsLines),
+        body: issueBody(description, saveUrl, lastSaveUrl, commandsUrl, logsUrl, meta),
         labels: ["bug-report"],
       }),
     });
