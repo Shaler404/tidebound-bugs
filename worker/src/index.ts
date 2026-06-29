@@ -93,11 +93,17 @@ function issueTitle(meta: Record<string, unknown>): string {
   return `[Bug] ${platform} ${appVersion} · ${deviceModel} · ${utcShort}`;
 }
 
+// GitHub rejects an issue body over 65536 chars with a 422 ("body is too long"). Stay well under it;
+// the FULL recentLogs ship as the logs.txt attachment, the body shows only a small tail.
+const MAX_BODY_CHARS = 60000;
+const LOG_TAIL_CHARS = 6000;
+
 function issueBody(
   description: string,
   saveUrl: string,
   lastSaveUrl: string,
   commandsUrl: string,
+  logsUrl: string,
   meta: Record<string, unknown>,
 ): string {
   // description as a blockquote (each line prefixed with "> "). The BODY may still show the
@@ -118,21 +124,30 @@ function issueBody(
   }
   const metaTable = rows.join("\n");
 
-  // recentLogs → fenced code block (backticks neutralized so logs can't break the fence)
+  // recentLogs: the FULL set is the logs.txt attachment (it can be hundreds of KB). Embed only the
+  // most recent ~LOG_TAIL_CHARS for at-a-glance context (backticks neutralized so logs can't break
+  // out of the fence).
   const logs = Array.isArray(meta.recentLogs) ? (meta.recentLogs as unknown[]) : [];
-  const logText = logs
-    .map((l) => neutralizeBackticks(String(l)))
-    .join("\n");
-  const logsBlock = logText.length > 0 ? `\`\`\`\n${logText}\n\`\`\`` : "_(no recent logs)_";
+  const tail: string[] = [];
+  let tailChars = 0;
+  for (let i = logs.length - 1; i >= 0 && tailChars < LOG_TAIL_CHARS; i--) {
+    const line = neutralizeBackticks(String(logs[i]));
+    tail.unshift(line);
+    tailChars += line.length + 1;
+  }
+  const tailNote =
+    logs.length > tail.length ? ` _(last ${tail.length} of ${logs.length} lines — full log attached)_` : "";
+  const logsBlock = tail.length > 0 ? `${tailNote}\n\`\`\`\n${tail.join("\n")}\n\`\`\`` : "_(no recent logs)_";
 
   // Attachment links. The saves are GZIPPED — gunzip them to read the JSON.
   const links: string[] = [];
   if (saveUrl) links.push(`**Current save (gzipped):** [save.json.gz](${saveUrl})`);
   if (lastSaveUrl) links.push(`**Previous save (gzipped):** [last_save.json.gz](${lastSaveUrl})`);
   if (commandsUrl) links.push(`**Player commands since last save:** [commands.json](${commandsUrl})`);
+  if (logsUrl) links.push(`**Full console log:** [logs.txt](${logsUrl})`);
   if (links.length === 0) links.push("_(no attachments)_");
 
-  return [
+  let body = [
     "### Description",
     "",
     quoted,
@@ -153,6 +168,14 @@ function issueBody(
     "",
     "</details>",
   ].join("\n");
+
+  // Hard backstop so a pathological meta/description can never trip the 65536-char 422.
+  if (body.length > MAX_BODY_CHARS) {
+    body =
+      body.slice(0, MAX_BODY_CHARS) +
+      "\n\n_…body truncated to fit GitHub's 65536-char limit; see the attached files._";
+  }
+  return body;
 }
 
 /** Read a multipart field as raw bytes, or null when the field is absent / a plain string. */
@@ -183,7 +206,7 @@ async function commitFile(
   if (!putRes.ok) {
     const detail = await putRes.text();
     console.error("contents PUT failed", path, putRes.status, detail);
-    throw new Error(`github returned ${putRes.status}`);
+    throw new Error(`github returned ${putRes.status}: ${detail.slice(0, 300)}`);
   }
   const putJson = (await putRes.json()) as { content?: { download_url?: string } };
   return putJson.content?.download_url ?? "";
@@ -248,6 +271,7 @@ async function handleReport(request: Request, env: Env): Promise<Response> {
   let saveUrl = "";
   let lastSaveUrl = "";
   let commandsUrl = "";
+  let logsUrl = "";
   try {
     saveUrl = await commitFile(
       env,
@@ -271,6 +295,17 @@ async function handleReport(request: Request, env: Env): Promise<Response> {
         `bug: add command journal for ${today}`,
       );
     }
+    // Full console log as a separate text attachment — keeps it OUT of the issue body (which has a
+    // 65536-char limit) while preserving every captured line.
+    const recentLogs = Array.isArray(meta.recentLogs) ? (meta.recentLogs as unknown[]) : [];
+    if (recentLogs.length > 0) {
+      logsUrl = await commitFile(
+        env,
+        `${prefix}logs.txt`,
+        base64Utf8(recentLogs.map((l) => String(l)).join("\n")),
+        `bug: add console log for ${today}`,
+      );
+    }
   } catch (err) {
     console.error("contents commit exception", err);
     return json({ ok: false, error: `contents: ${String(err)}` }, 500);
@@ -284,7 +319,7 @@ async function handleReport(request: Request, env: Env): Promise<Response> {
       headers: ghHeaders(env),
       body: JSON.stringify({
         title: issueTitle(meta),
-        body: issueBody(description, saveUrl, lastSaveUrl, commandsUrl, meta),
+        body: issueBody(description, saveUrl, lastSaveUrl, commandsUrl, logsUrl, meta),
         labels: ["bug-report"],
       }),
     });
@@ -292,7 +327,7 @@ async function handleReport(request: Request, env: Env): Promise<Response> {
       const detail = await issueRes.text();
       console.error("issues POST failed", issueRes.status, detail);
       return json(
-        { ok: false, error: `issues: github returned ${issueRes.status}` },
+        { ok: false, error: `issues: github returned ${issueRes.status}: ${detail.slice(0, 400)}` },
         500,
       );
     }

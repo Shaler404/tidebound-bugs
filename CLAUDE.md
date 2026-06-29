@@ -1,11 +1,13 @@
 # tidebound-bugs — Claude triage instructions
 
 This repository collects **auto-generated bug reports** for the Tidebound Unity game. Each report is
-an issue plus three attachments committed under `assets/<date>/<uuid>/`:
+an issue plus attachments committed under `assets/<date>/<uuid>/`:
 
 - `save.json.gz` — the **current** game state at report time (gzip-compressed JSON).
 - `last_save.json.gz` — the **previous** on-disk save (gzip-compressed JSON; may be absent).
 - `commands.json` — the player commands recorded **since the last save** (plain JSON; may be absent).
+- `logs.txt` — the full in-game console log captured at report time (plain text; may be absent). The
+  issue body shows only the most recent tail of this.
 
 **The `.gz` files are gzip-compressed — gunzip them before reading** (for example
 `gunzip -c save.json.gz`). The main game code lives in the **private** repo `Shaler404/tidebound`,
