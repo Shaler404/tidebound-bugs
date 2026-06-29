@@ -63,6 +63,10 @@ jobs:
             if [ -f "$report_dir/commands.json" ]; then
               jq '.' "$report_dir/commands.json" > triage_in/commands.json 2>/dev/null || cp "$report_dir/commands.json" triage_in/commands.json
             fi
+            # lifecycle.json only exists for OLDER reports (the newer worker folds it into commands.json).
+            if [ -f "$report_dir/lifecycle.json" ]; then
+              jq '.' "$report_dir/lifecycle.json" > triage_in/lifecycle.json 2>/dev/null || cp "$report_dir/lifecycle.json" triage_in/lifecycle.json
+            fi
             if [ -f "$report_dir/logs.txt" ]; then
               cp "$report_dir/logs.txt" triage_in/logs.txt
             fi
@@ -106,6 +110,9 @@ jobs:
                 chronologically; each entry has `kind` (`command`|`lifecycle`|`save`), `name`, `simTime`,
                 `utc`, `args`. Read between the `Save` markers to see which entries fell between which
                 saves; correlate each marker's `savedUtc`/`savedSimTime` to the save files above.
+              - `triage_in/lifecycle.json` — ONLY present for OLDER reports (newer reports fold the app
+                lifecycle + save markers into commands.json above). If present, it holds the app
+                pause/resume/focus/quit + low-memory events and `Save` checkpoint markers.
               - `triage_in/logs.txt` — the full in-game console log.
             - The private game source is checked out at `./game` — use the Grep and Glob tools there to
               find the affected systems and the specific files.
