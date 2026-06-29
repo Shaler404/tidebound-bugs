@@ -5,11 +5,11 @@ an issue plus attachments committed under `assets/<date>/<uuid>/`:
 
 - `save.json.gz` — the **current** game state at report time (gzip-compressed JSON).
 - `last_save.json.gz` — the **previous** on-disk save (gzip-compressed JSON; may be absent).
-- `commands.json` — the player commands recorded **since the last save** (plain JSON; may be absent).
-- `lifecycle.json` — the **persistent** app pause/resume/focus/quit + low-memory events and `Save`
-  checkpoint markers, spanning the whole session (plain JSON; may be absent). Correlate the `Save`
-  markers' `savedUtc`/`savedSimTime` to the attached save files to see which events fell between which
-  saves.
+- `commands.json` — the **full session timeline** (plain JSON; may be absent): every player command, app
+  pause/resume/focus/quit + low-memory event, and `Save` checkpoint marker, interleaved chronologically;
+  each entry has `kind` (`command` | `lifecycle` | `save`), `name`, `simTime`, `utc`, `args`. Read between
+  the `Save` markers to see which entries fell between which saves; correlate the markers'
+  `savedUtc`/`savedSimTime` to the attached save files.
 - `logs.txt` — the full in-game console log captured at report time (plain text; may be absent). The
   issue body shows only the most recent tail of this.
 
