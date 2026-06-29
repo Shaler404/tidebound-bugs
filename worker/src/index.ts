@@ -6,6 +6,7 @@
  *     save        (file, gzipped JSON — CURRENT game state)        REQUIRED
  *     lastSave    (file, gzipped JSON — PREVIOUS on-disk save)      optional
  *     commands    (text, JSON — player commands since last save)    optional
+ *     lifecycle   (text, JSON — app pause/resume/focus/quit + low-mem + Save markers) optional
  *     logs        (file, gzipped text — console log ring buffer)    optional
  *     description (text)                                            REQUIRED
  *     meta        (text/json — scalars only, no logs)              REQUIRED
@@ -17,8 +18,8 @@
  *   4. ACK the client immediately ({ ok: true }) — the GitHub round-trip runs in the
  *      background via ctx.waitUntil(fileReport(...)), so the client waits ONLY for the upload.
  *   5. fileReport (background): commit save.json.gz / last_save.json.gz / commands.json /
- *      logs.txt under assets/<YYYY-MM-DD>/<uuid>/ then open an issue. Failures are swallowed
- *      and logged (visible via `wrangler tail`) — the client never learns the issue number.
+ *      lifecycle.json / logs.txt under assets/<YYYY-MM-DD>/<uuid>/ then open an issue. Failures are
+ *      swallowed and logged (visible via `wrangler tail`) — the client never learns the issue number.
  *
  * Web/Fetch APIs ONLY (no Node-only globals — no Buffer). Binary parts are read with
  * `(field as File).arrayBuffer()`; gzip is undone with DecompressionStream("gzip"); base64 of raw
@@ -107,6 +108,7 @@ function issueBody(
   saveUrl: string,
   lastSaveUrl: string,
   commandsUrl: string,
+  lifecycleUrl: string,
   logsUrl: string,
   meta: Record<string, unknown>,
 ): string {
@@ -135,6 +137,7 @@ function issueBody(
   if (saveUrl) links.push(`**Current save (gzipped):** [save.json.gz](${saveUrl})`);
   if (lastSaveUrl) links.push(`**Previous save (gzipped):** [last_save.json.gz](${lastSaveUrl})`);
   if (commandsUrl) links.push(`**Player commands since last save:** [commands.json](${commandsUrl})`);
+  if (lifecycleUrl) links.push(`**App lifecycle + save markers:** [lifecycle.json](${lifecycleUrl})`);
   if (logsUrl) links.push(`**Full console log:** [logs.txt](${logsUrl})`);
   if (links.length === 0) links.push("_(no attachments)_");
 
@@ -206,6 +209,7 @@ interface ReportData {
   saveBytes: Uint8Array;
   lastSaveBytes: Uint8Array | null;
   commandsText: string;
+  lifecycleText: string;
   logsBytes: Uint8Array | null;
   description: string;
   meta: Record<string, unknown>;
@@ -219,7 +223,7 @@ interface ReportData {
  */
 async function fileReport(env: Env, data: ReportData): Promise<void> {
   try {
-    const { prefix, today, saveBytes, lastSaveBytes, commandsText, logsBytes, description, meta } = data;
+    const { prefix, today, saveBytes, lastSaveBytes, commandsText, lifecycleText, logsBytes, description, meta } = data;
 
     // Inflate the gzipped log part to plain text for the human-readable logs.txt attachment.
     let logsText = "";
@@ -238,6 +242,7 @@ async function fileReport(env: Env, data: ReportData): Promise<void> {
     let saveUrl = "";
     let lastSaveUrl = "";
     let commandsUrl = "";
+    let lifecycleUrl = "";
     let logsUrl = "";
 
     saveUrl = await commitFile(
@@ -262,6 +267,17 @@ async function fileReport(env: Env, data: ReportData): Promise<void> {
         `bug: add command journal for ${today}`,
       );
     }
+    // Persistent app-lifecycle stream (pause/resume/focus/quit + low-memory + Save markers) as a PLAIN-text
+    // attachment — small, committed verbatim so triage can correlate the Save markers' savedUtc/savedSimTime
+    // to the attached save files (which app events fell between which saves).
+    if (lifecycleText.trim().length > 0) {
+      lifecycleUrl = await commitFile(
+        env,
+        `${prefix}lifecycle.json`,
+        base64Utf8(lifecycleText),
+        `bug: add app lifecycle + save markers for ${today}`,
+      );
+    }
     // Full console log as a separate PLAIN-text attachment — keeps it OUT of the issue body (which has
     // a 65536-char limit) while preserving every captured line, human-readable in the repo.
     if (logsText.length > 0) {
@@ -280,7 +296,7 @@ async function fileReport(env: Env, data: ReportData): Promise<void> {
       headers: ghHeaders(env),
       body: JSON.stringify({
         title: issueTitle(meta),
-        body: issueBody(description, saveUrl, lastSaveUrl, commandsUrl, logsUrl, meta),
+        body: issueBody(description, saveUrl, lastSaveUrl, commandsUrl, lifecycleUrl, logsUrl, meta),
         labels: ["bug-report"],
       }),
     });
@@ -313,6 +329,8 @@ async function handleReport(request: Request, env: Env, ctx: ExecutionContext): 
   const metaRaw = String(form.get("meta") ?? "");
   const commandsRaw = form.get("commands");
   const commandsText = typeof commandsRaw === "string" ? commandsRaw : "";
+  const lifecycleRaw = form.get("lifecycle");
+  const lifecycleText = typeof lifecycleRaw === "string" ? lifecycleRaw : "";
 
   // Read the binary parts (gzipped bytes): save, lastSave, logs.
   let saveBytes: Uint8Array | null;
@@ -363,6 +381,7 @@ async function handleReport(request: Request, env: Env, ctx: ExecutionContext): 
       saveBytes,
       lastSaveBytes,
       commandsText,
+      lifecycleText,
       logsBytes,
       description,
       meta,
