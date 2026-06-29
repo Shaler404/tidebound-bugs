@@ -1,0 +1,9 @@
+# Local-dev secrets for `wrangler dev`. COPY this file to `.dev.vars` (which is gitignored)
+# and fill in real values. In PRODUCTION these are set via `wrangler secret put` instead —
+# never commit the real .dev.vars.
+#
+#   GH_TOKEN   — fine-grained GitHub PAT with Contents + Issues Read/Write on Shaler404/tidebound-bugs
+#   REPORT_KEY — the shared anti-abuse key; MUST match the Unity BugReportConfig.reportKey
+
+GH_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REPORT_KEY=replace-with-a-long-random-string

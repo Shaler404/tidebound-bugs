@@ -1,0 +1,13 @@
+name = "tidebound-bug-worker"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# Public, non-secret config. The bug repo owner/name.
+[vars]
+GH_OWNER = "Shaler404"
+GH_REPO = "tidebound-bugs"
+
+# SECRETS — NOT stored here. Set them at deploy with:
+#   npx wrangler secret put GH_TOKEN     (fine-grained PAT: Contents + Issues R/W on tidebound-bugs)
+#   npx wrangler secret put REPORT_KEY   (shared anti-abuse key; MUST match the Unity BugReportConfig.reportKey)
+# Local dev reads them from .dev.vars (gitignored) — see .dev.vars.example.

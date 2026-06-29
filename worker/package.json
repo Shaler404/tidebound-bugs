@@ -1,0 +1,15 @@
+{
+  "name": "tidebound-bug-worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Worker that receives Tidebound in-game bug reports and files them to the tidebound-bugs GitHub repo.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250101.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^3.0.0"
+  }
+}
