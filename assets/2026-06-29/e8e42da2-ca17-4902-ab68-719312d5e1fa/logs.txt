@@ -1,0 +1,1637 @@
+[Log] [WORLD] +TreeClump_small1#304 at (16,43) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#305 at (10,20) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#306 at (47,56) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#308 at (10,28) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#309 at (17,20) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#310 at (14,26) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#311 at (7,18) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#312 at (8,36) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +LargeStone#313 at (16,67) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#314 at (16,27) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#315 at (44,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#316 at (22,7) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#317 at (53,10) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#318 at (21,35) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#319 at (17,32) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#320 at (34,27) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +BerryClump#321 at (6,25) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#322 at (17,60) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#323 at (62,43) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#324 at (49,22) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#325 at (16,40) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#326 at (60,18) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#327 at (56,19) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#328 at (12,52) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +BerryClump#329 at (8,20) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +LargeClay1#330 at (55,62) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#331 at (22,51) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#332 at (13,38) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +LargeStone#333 at (5,51) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#334 at (26,14) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#336 at (59,43) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#337 at (39,63) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#338 at (60,53) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#339 at (9,42) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#340 at (37,7) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +LargeStone#341 at (58,7) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#342 at (52,55) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#344 at (35,7) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#345 at (32,14) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#346 at (54,44) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#347 at (67,27) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +BerryClump#348 at (16,22) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#349 at (37,53) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#351 at (48,53) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#353 at (25,20) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#354 at (36,56) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#355 at (54,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#356 at (24,9) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#357 at (12,48) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#358 at (35,23) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#359 at (51,18) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#360 at (36,25) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +BerryClump#361 at (11,23) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#362 at (17,13) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#363 at (15,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#364 at (23,13) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#365 at (11,25) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#366 at (28,25) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#368 at (10,9) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#370 at (19,33) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#371 at (45,20) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#372 at (21,37) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#373 at (53,25) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#374 at (50,26) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#375 at (57,14) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#376 at (14,43) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#377 at (20,49) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +LargeClay1#378 at (5,18) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +LargeStone#379 at (59,9) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#380 at (59,45) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#381 at (22,54) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +LargeStone#382 at (5,49) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small2#383 at (66,43) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#384 at (7,15) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +TreeClump_small1#385 at (31,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#386 at (58,48) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#387 at (17,11) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#388 at (51,4) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#389 at (63,21) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#391 at (21,6) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#392 at (42,63) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#394 at (60,56) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#395 at (17,51) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#396 at (50,64) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#397 at (14,10) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#398 at (10,58) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#399 at (45,62) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#400 at (61,47) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#401 at (52,7) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#402 at (7,34) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#403 at (3,24) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#404 at (8,41) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#405 at (2,26) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#406 at (53,47) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#407 at (65,53) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#408 at (17,4) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#409 at (6,15) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#410 at (51,56) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#411 at (57,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#414 at (43,4) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#415 at (54,56) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#416 at (42,2) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#417 at (17,10) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#418 at (22,57) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#419 at (41,56) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#421 at (6,47) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#422 at (42,64) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#423 at (42,57) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#424 at (50,54) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#425 at (43,64) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#426 at (47,55) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#427 at (19,4) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#428 at (5,28) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#429 at (4,23) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#430 at (62,48) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#431 at (15,8) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#432 at (47,62) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#433 at (22,6) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#434 at (4,24) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#435 at (19,53) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#436 at (7,12) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#437 at (26,8) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#438 at (58,50) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#439 at (43,7) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#441 at (13,58) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#442 at (7,36) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#443 at (42,56) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +BerryBush#444 at (9,19) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#445 at (8,38) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#446 at (49,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#447 at (63,49) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#448 at (32,6) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#449 at (24,54) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +BerryBush#450 at (16,19) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#451 at (7,24) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#452 at (46,62) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#453 at (46,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#454 at (10,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#455 at (4,25) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#456 at (7,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#457 at (52,27) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#459 at (7,21) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#460 at (8,56) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallStone#463 at (15,66) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#464 at (64,50) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +SmallClay1#467 at (42,59) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Mushrooms#468 at (17,3) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +House#469 at (26,36) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +carolina_worker_04#470 at (0,0) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Library#471 at (43,33) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +House#472 at (26,42) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +karl_worker_01#473 at (0,0) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +ClayStorage#474 at (54,52) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +ChickenCoop#475 at (41,30) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +Warehouse#476 at (34,38) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +FigurineWorkshop#477 at (39,44) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +House#478 at (29,43) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] [WORLD] +carolina_worker_03#479 at (0,0) (initial snapshot)
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:BindContext () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:341)
+Tidebound.View.Diagnostics.DiagnosticLogView:Rebind (Tidebound.Model.GameContext) (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:326)
+Tidebound.View.Bootstrap.GameBootstrap:EnsureDiagnosticBoundEarly (Tidebound.Model.GameContext) (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:531)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:413)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.EventSystems.EventSystem:OnEnable () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:452)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] [PRED] obj#6 PumpkinField: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+UnityEngine.Debug:Log (object)
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag (Tidebound.Model.WorldObject,string) (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:2927)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState (Tidebound.Model.WorldObject,bool,Tidebound.View.UI.Overlay.WorkProgressIndicatorView) (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:2681)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh () (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:629)
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged (bool) (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:2075)
+Tidebound.View.Rendering.CameraController:UpdateViewState () (at Assets/Scripts/View/Rendering/CameraController.cs:1168)
+Tidebound.View.Rendering.CameraController:Update () (at Assets/Scripts/View/Rendering/CameraController.cs:189)
+
+[Log] [PRED] obj#477 FigurineWorkshop: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+UnityEngine.Debug:Log (object)
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag (Tidebound.Model.WorldObject,string) (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:2927)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState (Tidebound.Model.WorldObject,bool,Tidebound.View.UI.Overlay.WorkProgressIndicatorView) (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:2681)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh () (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:629)
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged (bool) (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:2075)
+Tidebound.View.Rendering.CameraController:UpdateViewState () (at Assets/Scripts/View/Rendering/CameraController.cs:1168)
+Tidebound.View.Rendering.CameraController:Update () (at Assets/Scripts/View/Rendering/CameraController.cs:189)
+
+[Log] [PRED] START gen=1 tracking 2 workplace(s) (snapshot on main; worker dispatched)
+UnityEngine.Debug:Log (object)
+Tidebound.Model.Prediction.PredictionService:PredLog (string) (at Assets/Scripts/Model/Prediction/PredictionService.cs:485)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage () (at Assets/Scripts/Model/Prediction/PredictionService.cs:350)
+Tidebound.Model.Prediction.PredictionService:MaybeKickCoalesced () (at Assets/Scripts/Model/Prediction/PredictionService.cs:451)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks () (at Assets/Scripts/Model/Prediction/PredictionService.cs:431)
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate () (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:931)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] [PRED] FINISH gen=1 delivered -> store holds 2 prediction(s) -> OnPredictionUpdated
+UnityEngine.Debug:Log (object)
+Tidebound.Model.Prediction.PredictionService:PredLog (string) (at Assets/Scripts/Model/Prediction/PredictionService.cs:485)
+Tidebound.Model.Prediction.PredictionService:DeliverResults (long,Tidebound.Model.Prediction.SnapshotPool/Slot,System.Collections.Generic.Dictionary`2<long, Tidebound.Model.Prediction.PredictionResult>) (at Assets/Scripts/Model/Prediction/PredictionService.cs:503)
+Tidebound.Model.Prediction.PredictionService/<>c__DisplayClass29_1:<KickWholeVillage>b__3 () (at Assets/Scripts/Model/Prediction/PredictionService.cs:363)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks () (at Assets/Scripts/Model/Prediction/PredictionService.cs:424)
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate () (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:931)
+
+[Log] [PRED] store refreshed: 2 prediction(s)
+  obj#6: ready-in=not-finishing efficiency=0%, Food-full-in=0s
+  obj#477: ready-in=not-finishing efficiency=0%, Figurine-full-in=0s
+UnityEngine.Debug:Log (object)
+Tidebound.View.Diagnostics.DiagnosticLogView:HandlePredictionUpdated () (at Assets/Scripts/View/Diagnostics/DiagnosticLogView.cs:1147)
+Tidebound.Model.Prediction.PredictionService:DeliverResults (long,Tidebound.Model.Prediction.SnapshotPool/Slot,System.Collections.Generic.Dictionary`2<long, Tidebound.Model.Prediction.PredictionResult>) (at Assets/Scripts/Model/Prediction/PredictionService.cs:504)
+Tidebound.Model.Prediction.PredictionService/<>c__DisplayClass29_1:<KickWholeVillage>b__3 () (at Assets/Scripts/Model/Prediction/PredictionService.cs:363)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks () (at Assets/Scripts/Model/Prediction/PredictionService.cs:424)
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate () (at Assets/Scripts/View/UI/Overlay/OverlayCoordinator.cs:931)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Warning] There are 2 event systems in the scene. Please ensure there is always exactly one event system in the scene
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:543)
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+UnityEngine.Debug:Log (object)
+Tidebound.View.Bootstrap.GameBootstrap/<BootSequence>d__19:MoveNext () (at Assets/Scripts/View/Bootstrap/GameBootstrap.cs:473)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+[Log] There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+
+[Log] [UIBlurView] enabled (IsActive set true)
+UnityEngine.Debug:Log (object)
+Tidebound.View.UI.Common.UIBlurView:OnEnable () (at Assets/Scripts/View/UI/Common/UIBlurView.cs:65)
+Tidebound.View.UI.Common.UIBlurView:Show () (at Assets/Scripts/View/UI/Common/UIBlurView.cs:87)
+Tidebound.View.UI.Screens.ScreenCoordinator:UpdateDimmer () (at Assets/Scripts/View/UI/Screens/ScreenCoordinator.cs:379)
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen (Tidebound.View.UI.Screens.UIScreen) (at Assets/Scripts/View/UI/Screens/ScreenCoordinator.cs:136)
+Tidebound.View.UI.HUD.BugReportButtonView:HandleOpen () (at Assets/Scripts/View/UI/HUD/BugReportButtonView.cs:45)
+UnityEngine.EventSystems.EventSystem:Update () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+
+[Log] [UIBlurView] active=True featureRan=-1 result=null assigned=True src=? avg=none
+UnityEngine.Debug:Log (object)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport () (at Assets/Scripts/View/UI/Common/UIBlurView.cs:271)
+Tidebound.View.UI.Common.UIBlurView:LateUpdate () (at Assets/Scripts/View/UI/Common/UIBlurView.cs:210)
+
+[Log] [UIBlurView] active=True featureRan=1 result=642x1389 assigned=True src=1284x2778 msaa=1 avg=(0,39,0,36,0,28,1,00)
+UnityEngine.Debug:Log (object)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport () (at Assets/Scripts/View/UI/Common/UIBlurView.cs:271)
+Tidebound.View.UI.Common.UIBlurView:LateUpdate () (at Assets/Scripts/View/UI/Common/UIBlurView.cs:210)
