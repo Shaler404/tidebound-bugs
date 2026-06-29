@@ -34,7 +34,11 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          claude_args: "--model claude-sonnet-4-6 --max-turns 8"
+          claude_args: >-
+            --model claude-sonnet-4-6
+            --max-turns 30
+            --effort max
+            --allowedTools "Read,Grep,Glob,Bash(gunzip:*),Bash(zcat:*),Bash(cat:*),Bash(ls:*),Bash(head:*),Bash(tail:*),Bash(grep:*),Bash(find:*)"
           prompt: |
             You are an automated triage assistant for an auto-generated bug report for the
             Tidebound game (Unity).
