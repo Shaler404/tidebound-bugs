@@ -1,0 +1,60 @@
+[Log] [GameBootstrap] loaded save /var/mobile/Containers/Data/Application/6EF1E8AB-D852-4EDE-ADDA-F687C4A0E616/Documents/save_1782852953918.json, savedSimTime=332876.4, elapsed=344.64639
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.UIElements.UIElementsRuntimeUtility:RegisterEventSystem(Object)
+
+[Log] [PRED] obj#6 PumpkinField: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] obj#12 ClayPit: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] obj#471 Library: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] obj#476 Warehouse: gate stats=True hasVillager=True worksite=True -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] START gen=1 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=1 delivered -> store holds 4 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [UIBlurView] enabled (IsActive set true)
+Tidebound.View.UI.Common.UIBlurView:Show()
+Tidebound.View.UI.Screens.ScreenCoordinator:UpdateDimmer()
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen(UIScreen)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [UIBlurView] active=True featureRan=-1 result=null assigned=True src=? avg=none
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [UIBlurView] active=True featureRan=1 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.59,0.66,0.21,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
