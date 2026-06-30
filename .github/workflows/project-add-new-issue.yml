@@ -1,0 +1,86 @@
+name: Project — add new issue to board ("New")
+
+# Puts every newly opened issue onto the board in the "New" column. This is the auto-add that the
+# rest of the flow depends on (launch only labels cards already in the launch column; the triage
+# move only moves an existing card). It runs on the issue event — which fires for worker-created
+# issues because the worker creates them with its OWN token, not the Actions GITHUB_TOKEN — so no
+# worker change is needed. Best-effort: skips quietly unless PROJECT_TOKEN + PROJECT_NUMBER are set.
+
+on:
+  issues:
+    types: [opened, reopened]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: project-add-new-issue-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+      OWNER: ${{ vars.PROJECT_OWNER || 'Shaler404' }}
+      PROJECT_NUMBER: ${{ vars.PROJECT_NUMBER }}
+      STATUS_FIELD: ${{ vars.PROJECT_STATUS_FIELD || 'Status' }}
+      NEW_COLUMN: ${{ vars.PROJECT_NEW_COLUMN || 'New' }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      REPO: ${{ github.repository }}
+    steps:
+      - name: Add issue to the board in "New"
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ] || [ -z "${PROJECT_NUMBER:-}" ]; then
+            echo "Board automation not configured (need PROJECT_TOKEN + PROJECT_NUMBER) — skipping."
+            exit 0
+          fi
+
+          # Resolve project id, Status field id, and the "New" option id.
+          gh api graphql \
+            -f owner="$OWNER" -F number="$PROJECT_NUMBER" -f field="$STATUS_FIELD" \
+            -f query='
+              query($owner:String!, $number:Int!, $field:String!) {
+                user(login: $owner) {
+                  projectV2(number: $number) {
+                    id
+                    field(name: $field) {
+                      ... on ProjectV2SingleSelectField { id options { id name } }
+                    }
+                  }
+                }
+              }' > proj.json
+
+          PROJECT_ID=$(jq -r '.data.user.projectV2.id // empty' proj.json)
+          FIELD_ID=$(jq -r '.data.user.projectV2.field.id // empty' proj.json)
+          OPTION_ID=$(jq -r --arg c "$NEW_COLUMN" '.data.user.projectV2.field.options[]? | select(.name==$c) | .id' proj.json)
+
+          if [ -z "$PROJECT_ID" ]; then
+            echo "::warning::Could not resolve project #$PROJECT_NUMBER for $OWNER (check PROJECT_NUMBER and that PROJECT_TOKEN has project scope). Skipping."
+            exit 0
+          fi
+
+          # Add the issue (idempotent — returns the existing item id if it's already on the board).
+          CONTENT_ID=$(gh api "repos/$REPO/issues/$ISSUE_NUMBER" --jq '.node_id')
+          ITEM_ID=$(gh api graphql -f project="$PROJECT_ID" -f content="$CONTENT_ID" -f query='
+            mutation($project:ID!, $content:ID!) {
+              addProjectV2ItemById(input:{projectId:$project, contentId:$content}) { item { id } }
+            }' --jq '.data.addProjectV2ItemById.item.id')
+          echo "Issue #$ISSUE_NUMBER is on the board (item $ITEM_ID)."
+
+          # Set Status = New.
+          if [ -n "$FIELD_ID" ] && [ -n "$OPTION_ID" ] && [ -n "$ITEM_ID" ]; then
+            gh api graphql \
+              -f project="$PROJECT_ID" -f item="$ITEM_ID" -f field="$FIELD_ID" -f option="$OPTION_ID" \
+              -f query='
+                mutation($project:ID!, $item:ID!, $field:ID!, $option:String!) {
+                  updateProjectV2ItemFieldValue(input:{
+                    projectId:$project, itemId:$item, fieldId:$field,
+                    value:{ singleSelectOptionId:$option }
+                  }) { projectV2Item { id } }
+                }' >/dev/null
+            echo "Set Status = \"$NEW_COLUMN\"."
+          else
+            echo "::warning::Added to board but could not set Status=\"$NEW_COLUMN\" (check the option name / PROJECT_NEW_COLUMN). It will use the project's default column."
+          fi
