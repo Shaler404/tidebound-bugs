@@ -1,0 +1,19 @@
+[Log] [GameBootstrap] loaded save /storage/emulated/0/Android/data/com.alexslash.tidebound/files/save_1782800934650.json, savedSimTime=266970.6, elapsed=2568.936229
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.UIElements.UIElementsRuntimeUtility:RegisterEventSystem(Object)
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] [VillagerPortraitLeafView] No VillagerPortraitCoordinator set via Init()
+Tidebound.View.UI.Overlay.SelectionOverlayView:RefreshActionButtons()
+Tidebound.View.UI.Overlay.SelectionOverlayView:Bind(WorldObject)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleSelectionChanged(WorldObject, WorldObject, SelectionConfig)
+Tidebound.View.Managers.SelectionCoordinator:Select(WorldObject)
+Tidebound.View.Managers.InputHandler:HandleSingleTouch(Vector2, TouchPhase, Int32)
+Tidebound.View.Managers.InputHandler:UpdateTouch()
