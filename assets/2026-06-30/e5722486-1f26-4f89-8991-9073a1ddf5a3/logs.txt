@@ -1,0 +1,137 @@
+[Log] [GameBootstrap] loaded save /var/mobile/Containers/Data/Application/6EF1E8AB-D852-4EDE-ADDA-F687C4A0E616/Documents/save_1782852953918.json, savedSimTime=332876.4, elapsed=344.64639
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.UIElements.UIElementsRuntimeUtility:RegisterEventSystem(Object)
+
+[Log] [PRED] obj#6 PumpkinField: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] obj#12 ClayPit: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] obj#471 Library: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] obj#476 Warehouse: gate stats=True hasVillager=True worksite=True -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] START gen=1 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=1 delivered -> store holds 4 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [UIBlurView] enabled (IsActive set true)
+Tidebound.View.UI.Common.UIBlurView:Show()
+Tidebound.View.UI.Screens.ScreenCoordinator:UpdateDimmer()
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen(UIScreen)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [UIBlurView] active=True featureRan=-1 result=null assigned=True src=? avg=none
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [UIBlurView] active=True featureRan=1 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.59,0.66,0.21,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [BugReporter] send ok
+Tidebound.View.Diagnostics.<SendReportRoutine>d__24:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] obj#163 TreeClump_small2: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.Model.Villager:AssignTask(WorldObject, Int32)
+Tidebound.Model.TaskService:AssignInternal(Villager, WorldObject)
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.HUD.VillagerPanelView:HandleAssignModeCardTapped(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.HUD.VillagerPanelView:HandleAssignModeCardTapped(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=3 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=3 delivered -> store holds 4 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] obj#476 Warehouse: gate stats=True hasVillager=False worksite=True -> showTooltip=False
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleSelectionChanged(WorldObject, WorldObject, SelectionConfig)
+Tidebound.View.Managers.SelectionCoordinator:Select(WorldObject)
+Tidebound.View.Managers.InputHandler:HandleSingleTouch(Vector2, TouchPhase, Int32)
+Tidebound.View.Managers.InputHandler:UpdateTouch()
+
+[Log] [PRED] obj#476 Warehouse: gate stats=True hasVillager=True worksite=True -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.Model.Villager:AssignTask(WorldObject, Int32)
+Tidebound.Model.TaskService:AssignInternal(Villager, WorldObject)
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.HUD.VillagerPanelView:HandleAssignModeCardTapped(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.HUD.VillagerPanelView:HandleAssignModeCardTapped(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=5 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=5 delivered -> store holds 4 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [UIBlurView] enabled (IsActive set true)
+Tidebound.View.UI.Common.UIBlurView:Show()
+Tidebound.View.UI.Screens.ScreenCoordinator:UpdateDimmer()
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen(UIScreen)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [UIBlurView] active=True featureRan=7007 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.59,0.66,0.21,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [UIBlurView] active=True featureRan=1 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.73,0.50,0.17,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
