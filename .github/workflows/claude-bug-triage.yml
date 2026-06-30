@@ -395,3 +395,76 @@ jobs:
             echo "::warning::Claude produced no comment.md — nothing posted."
             exit 1
           fi
+
+      # 6. Move the issue's project card to "Bot finished" and clear the transient `triage` label so
+      #    re-dragging to the launch column re-runs cleanly. Best-effort: skips quietly unless the
+      #    PROJECT_TOKEN secret + PROJECT_NUMBER variable are set. always() so it runs even when the
+      #    Claude step hit max-turns (the comment is already posted by that point). Uses PROJECT_TOKEN
+      #    (a PAT) because the default GITHUB_TOKEN cannot write a user-owned Projects v2 board.
+      - name: Move project card to "Bot finished"
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+          OWNER: ${{ vars.PROJECT_OWNER || 'Shaler404' }}
+          PROJECT_NUMBER: ${{ vars.PROJECT_NUMBER }}
+          STATUS_FIELD: ${{ vars.PROJECT_STATUS_FIELD || 'Status' }}
+          FINISHED_COLUMN: ${{ vars.PROJECT_FINISHED_COLUMN || 'Bot finished' }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ] || [ -z "${PROJECT_NUMBER:-}" ]; then
+            echo "Board automation not configured (need PROJECT_TOKEN + PROJECT_NUMBER) — skipping board move."
+            exit 0
+          fi
+
+          # Resolve: project id, Status field id + the "Bot finished" option id, and this issue's
+          # project item id (the issue is normally already on the board via the auto-add workflow).
+          gh api graphql \
+            -f owner="$OWNER" -F number="$PROJECT_NUMBER" -f field="$STATUS_FIELD" \
+            -f query='
+              query($owner:String!, $number:Int!, $field:String!) {
+                user(login: $owner) {
+                  projectV2(number: $number) {
+                    id
+                    field(name: $field) {
+                      ... on ProjectV2SingleSelectField { id options { id name } }
+                    }
+                    items(first: 100) { nodes { id content { ... on Issue { number } } } }
+                  }
+                }
+              }' > proj.json
+
+          PROJECT_ID=$(jq -r '.data.user.projectV2.id // empty' proj.json)
+          FIELD_ID=$(jq -r '.data.user.projectV2.field.id // empty' proj.json)
+          OPTION_ID=$(jq -r --arg c "$FINISHED_COLUMN" '.data.user.projectV2.field.options[]? | select(.name==$c) | .id' proj.json)
+          ITEM_ID=$(jq -r --argjson n "$ISSUE_NUMBER" '.data.user.projectV2.items.nodes[]? | select(.content.number==$n) | .id' proj.json)
+
+          if [ -z "$PROJECT_ID" ] || [ -z "$FIELD_ID" ] || [ -z "$OPTION_ID" ]; then
+            echo "::warning::Could not resolve project/Status-field/\"$FINISHED_COLUMN\" option — check PROJECT_NUMBER, STATUS_FIELD=\"$STATUS_FIELD\", and the option name. Skipping board move."
+            exit 0
+          fi
+
+          # Add the issue to the board if it isn't there yet.
+          if [ -z "$ITEM_ID" ]; then
+            CONTENT_ID=$(gh api "repos/$REPO/issues/$ISSUE_NUMBER" --jq '.node_id')
+            ITEM_ID=$(gh api graphql -f project="$PROJECT_ID" -f content="$CONTENT_ID" -f query='
+              mutation($project:ID!, $content:ID!) {
+                addProjectV2ItemById(input:{projectId:$project, contentId:$content}) { item { id } }
+              }' --jq '.data.addProjectV2ItemById.item.id')
+          fi
+
+          gh api graphql \
+            -f project="$PROJECT_ID" -f item="$ITEM_ID" -f field="$FIELD_ID" -f option="$OPTION_ID" \
+            -f query='
+              mutation($project:ID!, $item:ID!, $field:ID!, $option:String!) {
+                updateProjectV2ItemFieldValue(input:{
+                  projectId:$project, itemId:$item, fieldId:$field,
+                  value:{ singleSelectOptionId:$option }
+                }) { projectV2Item { id } }
+              }' >/dev/null
+          echo "Moved issue #$ISSUE_NUMBER to \"$FINISHED_COLUMN\"."
+
+          # Transient label: remove it so the board column stays the single source of truth and a
+          # re-drag into the launch column triggers a fresh run.
+          gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --remove-label "triage" 2>/dev/null || true

@@ -1,0 +1,93 @@
+name: Project — launch triage on "Bot launched"
+
+# A GitHub Projects (v2) board owned by a USER does NOT emit events that can trigger repository
+# Actions, and user accounts can't register project webhooks. So we cannot react to a card being
+# dragged into the launch column in real time — we POLL the board on a schedule instead: any issue
+# sitting in the "Bot launched" column that doesn't already carry the `triage` label gets it, which
+# fires the existing claude-bug-triage workflow. Latency is up to one poll interval.
+#
+# IMPORTANT: the label is added with PROJECT_TOKEN (a PAT), NOT the default GITHUB_TOKEN. Events
+# produced by GITHUB_TOKEN do not trigger further workflows; a PAT's do — that is what lets the
+# `labeled` event reach claude-bug-triage. The PAT acts as its owner (a User), so it also satisfies
+# that workflow's `sender.type != 'Bot'` gate.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # every 5 min — GitHub's minimum granularity; runs are best-effort and can lag
+  workflow_dispatch: {}      # run a sweep on demand
+
+permissions:
+  contents: read
+
+concurrency:
+  group: project-launch-triage
+  cancel-in-progress: false
+
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+      OWNER: ${{ vars.PROJECT_OWNER || 'Shaler404' }}
+      PROJECT_NUMBER: ${{ vars.PROJECT_NUMBER }}
+      STATUS_FIELD: ${{ vars.PROJECT_STATUS_FIELD || 'Status' }}
+      LAUNCH_COLUMN: ${{ vars.PROJECT_LAUNCH_COLUMN || 'Bot launched' }}
+      TRIAGE_LABEL: triage
+      REPO: ${{ github.repository }}
+    steps:
+      - name: Add `triage` to issues parked in the launch column
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ] || [ -z "${PROJECT_NUMBER:-}" ]; then
+            echo "::warning::Board automation not configured yet (need PROJECT_TOKEN secret + PROJECT_NUMBER variable). Skipping."
+            exit 0
+          fi
+
+          # Pull up to 100 board items: each item's Status option name + its linked issue.
+          gh api graphql \
+            -f owner="$OWNER" -F number="$PROJECT_NUMBER" -f field="$STATUS_FIELD" \
+            -f query='
+              query($owner:String!, $number:Int!, $field:String!) {
+                user(login: $owner) {
+                  projectV2(number: $number) {
+                    items(first: 100) {
+                      nodes {
+                        status: fieldValueByName(name: $field) {
+                          ... on ProjectV2ItemFieldSingleSelectValue { name }
+                        }
+                        content {
+                          __typename
+                          ... on Issue {
+                            number
+                            state
+                            repository { nameWithOwner }
+                            labels(first: 50) { nodes { name } }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }' > items.json
+
+          # OPEN issues in THIS repo, sitting in the launch column, without the triage label.
+          jq -r --arg col "$LAUNCH_COLUMN" --arg repo "$REPO" --arg label "$TRIAGE_LABEL" '
+            .data.user.projectV2.items.nodes[]
+            | select(.content.__typename == "Issue")
+            | select(.status != null and .status.name == $col)
+            | select(.content.state == "OPEN")
+            | select(.content.repository.nameWithOwner == $repo)
+            | select([.content.labels.nodes[].name] | index($label) | not)
+            | .content.number
+          ' items.json | sort -un > to_launch.txt
+
+          if [ ! -s to_launch.txt ]; then
+            echo "Nothing to launch — no un-labelled OPEN issues in \"$LAUNCH_COLUMN\"."
+            exit 0
+          fi
+
+          while read -r n; do
+            [ -n "$n" ] || continue
+            echo "Launching triage for issue #$n (in \"$LAUNCH_COLUMN\")."
+            gh issue edit "$n" --repo "$REPO" --add-label "$TRIAGE_LABEL"
+          done < to_launch.txt
