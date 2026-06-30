@@ -1,0 +1,97 @@
+name: Project — backfill issues onto the board (manual)
+
+# On-demand reconcile: add EVERY repo issue to the board and set its Status — open issues to the
+# "New" column, closed issues to "Done" (both overridable via inputs). Idempotent: re-running
+# updates existing cards instead of duplicating, so it's safe to run any time the board drifts.
+# Dispatch from the Actions tab (or `gh workflow run project-backfill.yml`).
+
+on:
+  workflow_dispatch:
+    inputs:
+      include_closed:
+        description: "Also add closed issues"
+        type: boolean
+        default: true
+      open_column:
+        description: "Status column for OPEN issues"
+        default: "New"
+      closed_column:
+        description: "Status column for CLOSED issues"
+        default: "Done"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: project-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+      OWNER: ${{ vars.PROJECT_OWNER || 'Shaler404' }}
+      PROJECT_NUMBER: ${{ vars.PROJECT_NUMBER }}
+      STATUS_FIELD: ${{ vars.PROJECT_STATUS_FIELD || 'Status' }}
+      OPEN_COLUMN: ${{ inputs.open_column }}
+      CLOSED_COLUMN: ${{ inputs.closed_column }}
+      INCLUDE_CLOSED: ${{ inputs.include_closed }}
+      REPO: ${{ github.repository }}
+    steps:
+      - name: Add every issue to the board with a sensible Status
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ] || [ -z "${PROJECT_NUMBER:-}" ]; then
+            echo "::error::PROJECT_TOKEN secret and PROJECT_NUMBER variable are required."; exit 1
+          fi
+
+          # Resolve project id, Status field id, and the option ids for the open/closed columns.
+          gh api graphql -f owner="$OWNER" -F number="$PROJECT_NUMBER" -f field="$STATUS_FIELD" -f query='
+            query($owner:String!, $number:Int!, $field:String!) {
+              user(login:$owner){ projectV2(number:$number){
+                id
+                field(name:$field){ ... on ProjectV2SingleSelectField { id options { id name } } }
+              } }
+            }' > proj.json
+
+          PROJECT_ID=$(jq -r '.data.user.projectV2.id // empty' proj.json)
+          FIELD_ID=$(jq -r '.data.user.projectV2.field.id // empty' proj.json)
+          OPEN_OPT=$(jq -r --arg c "$OPEN_COLUMN" '.data.user.projectV2.field.options[]? | select(.name==$c) | .id' proj.json)
+          CLOSED_OPT=$(jq -r --arg c "$CLOSED_COLUMN" '.data.user.projectV2.field.options[]? | select(.name==$c) | .id' proj.json)
+
+          if [ -z "$PROJECT_ID" ] || [ -z "$FIELD_ID" ]; then
+            echo "::error::Could not resolve project #$PROJECT_NUMBER or its \"$STATUS_FIELD\" field."; exit 1
+          fi
+          [ -n "$OPEN_OPT" ]   || echo "::warning::No \"$OPEN_COLUMN\" option found — open issues will be added without a Status."
+          [ -n "$CLOSED_OPT" ] || echo "::warning::No \"$CLOSED_COLUMN\" option found — closed issues will be added without a Status."
+
+          if [ "$INCLUDE_CLOSED" = "true" ]; then STATE=all; else STATE=open; fi
+          # gh issue list excludes PRs and returns the GraphQL node id directly.
+          gh issue list --repo "$REPO" --state "$STATE" -L 500 --json number,id,state > issues.json
+          total=$(jq 'length' issues.json)
+          echo "Backfilling $total issue(s) (state=$STATE) into project #$PROJECT_NUMBER."
+
+          jq -c '.[]' issues.json | while read -r row; do
+            num=$(jq -r '.number' <<<"$row")
+            nid=$(jq -r '.id' <<<"$row")
+            st=$(jq -r '.state' <<<"$row" | tr 'A-Z' 'a-z')
+
+            item=$(gh api graphql -f project="$PROJECT_ID" -f content="$nid" -f query='
+              mutation($project:ID!, $content:ID!){
+                addProjectV2ItemById(input:{projectId:$project, contentId:$content}){ item { id } }
+              }' --jq '.data.addProjectV2ItemById.item.id')
+
+            if [ "$st" = "open" ]; then opt="$OPEN_OPT"; col="$OPEN_COLUMN"; else opt="$CLOSED_OPT"; col="$CLOSED_COLUMN"; fi
+
+            if [ -n "$opt" ] && [ -n "$item" ]; then
+              gh api graphql -f project="$PROJECT_ID" -f item="$item" -f field="$FIELD_ID" -f option="$opt" -f query='
+                mutation($project:ID!, $item:ID!, $field:ID!, $option:String!){
+                  updateProjectV2ItemFieldValue(input:{projectId:$project, itemId:$item, fieldId:$field, value:{singleSelectOptionId:$option}}){ projectV2Item { id } }
+                }' >/dev/null
+              echo "  #$num ($st) -> \"$col\""
+            else
+              echo "  #$num ($st) -> added (no Status set)"
+            fi
+          done
+          echo "Done."
