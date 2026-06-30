@@ -1,0 +1,14 @@
+[Log] [GameBootstrap] loaded save /storage/emulated/0/Android/data/com.alexslash.tidebound/files/save_1782783804433.json, savedSimTime=249846.35, elapsed=8466.217345
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.UIElements.UIElementsRuntimeUtility:RegisterEventSystem(Object)
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Error] Coroutine couldn't be started because the the game object 'ButtonSpeedUpResearch' is inactive!
+Tidebound.View.UI.Common.ButtonPressAnim:OnPointerUp(PointerEventData)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
