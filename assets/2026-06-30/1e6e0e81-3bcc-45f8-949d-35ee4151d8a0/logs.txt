@@ -1,0 +1,828 @@
+[Log] [GameBootstrap] loaded save /var/mobile/Containers/Data/Application/6EF1E8AB-D852-4EDE-ADDA-F687C4A0E616/Documents/save_1782849328487.json, savedSimTime=329250.9, elapsed=3305.328174
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.GameContext:RescheduleAllForMultiplierChange(Int64, Double)
+Tidebound.Model.Simulation.EventDriver:AdvanceUntil(Double)
+Tidebound.Model.Simulation.SimController:AdvanceUntil(Double, Nullable`1)
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.UIElements.UIElementsRuntimeUtility:RegisterEventSystem(Object)
+
+[Log] [PRED] obj#6 PumpkinField: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] obj#15 ManagedForest: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleViewStateChanged(Boolean)
+Tidebound.View.Rendering.CameraController:UpdateViewState()
+
+[Log] [PRED] START gen=2 tracking 2 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=2 delivered -> store holds 2 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.GameContext:RescheduleAllForMultiplierChange(Int64, Double)
+Tidebound.Model.WorkSiteService:ClaimGiftBox(WorldObject)
+Tidebound.View.Managers.SelectionCoordinator:TryRouteGiftBoxTap(WorldObject)
+Tidebound.View.Managers.SelectionCoordinator:HandleObjectTapped(WorldObject)
+Tidebound.View.Managers.InputHandler:HandleSingleTouch(Vector2, TouchPhase, Int32)
+Tidebound.View.Managers.InputHandler:UpdateTouch()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.WorkSiteService:ClaimGiftBox(WorldObject)
+Tidebound.View.Managers.SelectionCoordinator:TryRouteGiftBoxTap(WorldObject)
+Tidebound.View.Managers.SelectionCoordinator:HandleObjectTapped(WorldObject)
+Tidebound.View.Managers.InputHandler:HandleSingleTouch(Vector2, TouchPhase, Int32)
+Tidebound.View.Managers.InputHandler:UpdateTouch()
+
+[Log] [PRED] START gen=5 tracking 2 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=5 delivered -> store holds 2 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [UIBlurView] enabled (IsActive set true)
+Tidebound.View.UI.Common.UIBlurView:Show()
+Tidebound.View.UI.Screens.ScreenCoordinator:UpdateDimmer()
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen(UIScreen)
+Tidebound.View.UI.Screens.ScreenCoordinator:PushPopup(UIScreen, Transform)
+Tidebound.View.UI.Research.ResearchTabView:ShowCompletionPopup(TechNodeDefinition)
+Tidebound.View.UI.Research.ResearchTabView:HandleResearchCompleted(TechNodeDefinition)
+Tidebound.Model.ResearchService:CompleteReadyResearch()
+Tidebound.View.UI.Research.ResearchTabView:NotifyShown()
+Tidebound.View.UI.SelectionWindow.SelectionWindowView:SwitchTo(SelectionWindowTabItem)
+Tidebound.View.UI.SelectionWindow.SelectionWindowView:OnOpen()
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen(UIScreen)
+Tidebound.View.UI.HUDCoordinator:RequestOpenSelectionWindow(WorldObject, Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResearchService:CompleteReadyResearch()
+Tidebound.View.UI.Research.ResearchTabView:NotifyShown()
+Tidebound.View.UI.SelectionWindow.SelectionWindowView:SwitchTo(SelectionWindowTabItem)
+Tidebound.View.UI.SelectionWindow.SelectionWindowView:OnOpen()
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen(UIScreen)
+Tidebound.View.UI.HUDCoordinator:RequestOpenSelectionWindow(WorldObject, Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=7 tracking 2 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [UIBlurView] active=True featureRan=-1 result=null assigned=True src=? avg=none
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [UIBlurView] active=True featureRan=1 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.40,0.26,0.65,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [PRED] FINISH gen=7 delivered -> store holds 2 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResearchService:LockResearch(TechNodeDefinition)
+Tidebound.View.UI.Research.ResearchTabView:HandleLockPressed()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=9 tracking 2 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=9 delivered -> store holds 2 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] obj#471 Library: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.Model.Villager:AssignTask(WorldObject, Int32)
+Tidebound.Model.TaskService:AssignInternal(Villager, WorldObject)
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.SelectionWindow.VillagerTabView:HandleAssignVillager(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.SelectionWindow.VillagerTabView:HandleAssignVillager(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=11 tracking 3 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=11 delivered -> store holds 3 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Warning] [VillagerPortraitLeafView] No VillagerPortraitCoordinator set via Init()
+Tidebound.View.UI.Overlay.SelectionOverlayView:RefreshActionButtons()
+Tidebound.View.UI.Overlay.SelectionOverlayView:Bind(WorldObject)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleSelectionChanged(WorldObject, WorldObject, SelectionConfig)
+Tidebound.View.Managers.SelectionCoordinator:Select(WorldObject)
+Tidebound.View.UI.SelectionWindow.SelectionWindowView:OnClose()
+Tidebound.View.UI.Screens.ScreenCoordinator:CloseScreen()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:GainResources(ResourceDefinition, Int32)
+Tidebound.Model.ResourceService:CollectProduction(WorldObject)
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleHarvestTapped(WorldObject)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=13 tracking 3 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=13 delivered -> store holds 3 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] obj#477 FigurineWorkshop: gate stats=True hasVillager=False worksite=False -> showTooltip=False
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleSelectionChanged(WorldObject, WorldObject, SelectionConfig)
+Tidebound.View.Managers.SelectionCoordinator:Select(WorldObject)
+Tidebound.View.Managers.InputHandler:HandleSingleTouch(Vector2, TouchPhase, Int32)
+Tidebound.View.Managers.InputHandler:UpdateTouch()
+
+[Log] [UIBlurView] enabled (IsActive set true)
+Tidebound.View.UI.Common.UIBlurView:Show()
+Tidebound.View.UI.Screens.ScreenCoordinator:UpdateDimmer()
+Tidebound.View.UI.SelectionWindow.SelectionWindowView:OnOpen()
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen(UIScreen)
+Tidebound.View.UI.HUDCoordinator:RequestOpenSelectionWindow(WorldObject, Int32)
+Tidebound.View.UI.Overlay.SelectionOverlayView:HandleActionButtonPressed(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [UIBlurView] active=True featureRan=606 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.40,0.26,0.65,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [UIBlurView] active=True featureRan=1 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.56,0.76,0.19,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.WorkSiteService:StartLevelTransition(WorldObject, Boolean)
+Tidebound.View.UI.SelectionWindow.UpgradeTabView:HandleUpgradePressed()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.WorkSiteService:StartLevelTransition(WorldObject, Boolean)
+Tidebound.View.UI.SelectionWindow.UpgradeTabView:HandleUpgradePressed()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] obj#476 Warehouse: gate stats=True hasVillager=False worksite=True -> showTooltip=False
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleSelectionChanged(WorldObject, WorldObject, SelectionConfig)
+Tidebound.View.Managers.SelectionCoordinator:Select(WorldObject)
+Tidebound.View.UI.SelectionWindow.SelectionWindowView:OnClose()
+Tidebound.View.UI.Screens.ScreenCoordinator:CloseScreen()
+Tidebound.View.UI.SelectionWindow.UpgradeTabView:HandleUpgradePressed()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=16 tracking 3 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FINISH gen=16 delivered -> store holds 3 prediction(s) -> OnPredictionUpdated
+Tidebound.Model.Prediction.PredictionService:DeliverResults(Int64, Slot, Dictionary`2)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] obj#476 Warehouse: gate stats=True hasVillager=True worksite=True -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.Model.Villager:AssignTask(WorldObject, Int32)
+Tidebound.Model.TaskService:AssignInternal(Villager, WorldObject)
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.HUD.VillagerPanelView:HandleAssignModeCardTapped(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.HUD.VillagerPanelView:HandleAssignModeCardTapped(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=18 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=18: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.BoostPanelView:HandleSpendPressUp()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=20 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=20: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=22 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=22: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=24 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=24: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=26 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=26: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=28 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=28: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=30 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=30: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=32 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=32: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=34 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=34: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=36 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=36: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=38 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=38: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=40 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=40: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=42 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=42: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=44 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=44: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.ResourceService:SpendResources(ResourceCost[])
+Tidebound.Model.ResourceService:Spend(ResourceDefinition, Int32)
+Tidebound.Model.GameContext:SpendNectarBoost(Int32)
+Tidebound.View.UI.HUD.BoostPanelView:SpendOneTick()
+Tidebound.View.UI.HUD.<SpendHoldLoop>d__32:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Log] [PRED] START gen=46 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=46: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.GameContext:RescheduleAllForMultiplierChange(Int64, Double)
+Tidebound.View.UI.HUD.BoostPanelView:HandleToggleRequested(Boolean)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=48 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=48: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [UIBlurView] enabled (IsActive set true)
+Tidebound.View.UI.Common.UIBlurView:Show()
+Tidebound.View.UI.Screens.ScreenCoordinator:UpdateDimmer()
+Tidebound.View.UI.SelectionWindow.SelectionWindowView:OnOpen()
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen(UIScreen)
+Tidebound.View.UI.HUDCoordinator:RequestOpenSelectionWindow(WorldObject, Int32)
+Tidebound.View.UI.Overlay.SelectionOverlayView:HandleActionButtonPressed(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [UIBlurView] active=True featureRan=1342 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.56,0.76,0.19,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [UIBlurView] active=True featureRan=1 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.50,0.45,0.19,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [PRED] obj#12 ClayPit: gate stats=True hasVillager=False worksite=False -> showTooltip=False
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleSelectionChanged(WorldObject, WorldObject, SelectionConfig)
+Tidebound.View.Managers.SelectionCoordinator:Select(WorldObject)
+Tidebound.View.Managers.InputHandler:HandleSingleTouch(Vector2, TouchPhase, Int32)
+Tidebound.View.Managers.InputHandler:UpdateTouch()
+
+[Log] [PRED] obj#12 ClayPit: gate stats=True hasVillager=True worksite=False -> showTooltip=True
+Tidebound.View.UI.Overlay.OverlayCoordinator:PredDiag(WorldObject, String)
+Tidebound.View.UI.Overlay.OverlayCoordinator:ComputeIndicatorState(WorldObject, Boolean, WorkProgressIndicatorView)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.Model.Villager:AssignTask(WorldObject, Int32)
+Tidebound.Model.TaskService:AssignInternal(Villager, WorldObject)
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.HUD.VillagerPanelView:HandleAssignModeCardTapped(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] INVALIDATE -> dirty (coalesced; the main-thread pump will kick the settled state next frame)
+Tidebound.Model.Prediction.PredictionService:OnModelMutatedKick()
+Tidebound.Model.TaskService:Assign(Villager, WorldObject)
+Tidebound.View.UI.HUD.VillagerPanelView:HandleAssignModeCardTapped(Villager)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [PRED] START gen=50 tracking 4 workplace(s) (snapshot on main; worker dispatched)
+Tidebound.Model.Prediction.PredictionService:KickWholeVillage()
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [PRED] FAULT gen=50: UnityEngine.UnityException: GetName can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at Tidebound.Model.WorkplaceLoopAdvancer.DispatchFromWorkplace (Tidebound.Model.Villager v, Tidebound.Model.WorldState ws, Tidebound.Model.Simulation.Pathfinding.IPathService ps, Tidebound.Model.Simulation.SimClock clock, Tidebound.Model.Simulation.WorkCompletionSystem wcs) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.WorkCompletionSystem.AdvanceTo (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.EventDriver.AdvanceUntil (System.Double t) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Simulation.SimController.AdvanceUntil (System.Double t, System.Nullable`1[T] horizonOverride) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService.RunWholeVillageWalk (Tidebound.Model.GameContext clone, System.Collections.Generic.List`1[T] trackedIds, System.Threading.CancellationToken token) [0x00000] in <00000000000000000000000000000000>:0 
+  at Tidebound.Model.Prediction.PredictionService+<>c__DisplayClass29_0.<KickWholeVillage>b__1 () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.Execute () [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteWithThreadLocal (System.Threading.Tasks.Task& currentTaskSlot) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.Tasks.Task.ExecuteEntry (System.Boolean bPreventDoubleExecution) [0x00000] in <00000000000000000000000000000000>:0 
+  at System.Threading.ThreadPoolWorkQueue.Dispatch () [0x00000] in <00000000000000000000000000000000>:0 
+Tidebound.Model.Prediction.PredictionService:DeliverFault(Int64, Slot, CancellationTokenSource, Exception)
+Tidebound.Model.Prediction.PredictionService:DrainMainThreadCallbacks()
+Tidebound.View.UI.Overlay.OverlayCoordinator:LateUpdate()
+
+[Log] [UIBlurView] enabled (IsActive set true)
+Tidebound.View.UI.Common.UIBlurView:Show()
+Tidebound.View.UI.Screens.ScreenCoordinator:UpdateDimmer()
+Tidebound.View.UI.Screens.ScreenCoordinator:OpenScreen(UIScreen)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+
+[Log] [UIBlurView] active=True featureRan=2649 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.50,0.45,0.19,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
+
+[Log] [UIBlurView] active=True featureRan=1 result=645x1398 assigned=True src=967x2097 msaa=1 avg=(0.49,0.49,0.23,1.00)
+Tidebound.View.UI.Common.UIBlurView:LogChainReport()
