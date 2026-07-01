@@ -1,0 +1,25 @@
+[Log] [GameBootstrap] loaded save /storage/emulated/0/Android/data/com.alexslash.tidebound/files/save_1782891421014.json, savedSimTime=357433.25, elapsed=1104.37895
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.UIElements.UIElementsRuntimeUtility:RegisterEventSystem(Object)
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] [VillagerPortraitLeafView] No VillagerPortraitCoordinator set via Init()
+Tidebound.View.UI.Overlay.SelectionOverlayView:RefreshActionButtons()
+Tidebound.View.UI.Overlay.SelectionOverlayView:Bind(WorldObject)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleSelectionChanged(WorldObject, WorldObject, SelectionConfig)
+Tidebound.View.Managers.SelectionCoordinator:Select(WorldObject)
+Tidebound.View.Managers.InputHandler:HandleSingleTouch(Vector2, TouchPhase, Int32)
+Tidebound.View.Managers.InputHandler:UpdateTouch()
+
+[Warning] The character with Unicode value \U0001F62D was not found in the [Blacker-Sans-Pro-Extrabold Brown] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [Text].
+TMPro.TextMeshProUGUI:SetArraySizes(UnicodeChar[])
+TMPro.TextMeshProUGUI:OnPreRenderCanvas()
+TMPro.TextMeshProUGUI:Rebuild(CanvasUpdate)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate()
