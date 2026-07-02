@@ -54,12 +54,23 @@ jobs:
           echo "report_dir='${report_dir:-<none>}'"
           # 3c. Stage just this report's files under fixed names; decompress + pretty-print the saves.
           if [ -n "$report_dir" ] && [ -d "$report_dir" ]; then
-            for name in save last_save; do
-              gz="$report_dir/$name.json.gz"
-              if [ -f "$gz" ]; then
-                gunzip -c "$gz" | jq '.' > "triage_in/$name.json" 2>/dev/null || gunzip -c "$gz" > "triage_in/$name.json"
-              fi
+            # Current snapshot + legacy single previous-save + EVERY rolling backup (save_<index>.json.gz).
+            # save.json.gz / last_save.json.gz do NOT match the save_* glob (different separators), so no
+            # file is staged twice. Each is gunzipped + pretty-printed to triage_in/<name>.json.
+            for gz in "$report_dir"/save.json.gz "$report_dir"/last_save.json.gz "$report_dir"/save_*.json.gz; do
+              [ -f "$gz" ] || continue
+              base="$(basename "$gz" .gz)"   # save.json | last_save.json | save_<index>.json
+              gunzip -c "$gz" | jq '.' > "triage_in/$base" 2>/dev/null || gunzip -c "$gz" > "triage_in/$base"
             done
+            # Dating baseline (prev_save.json): the NEWEST rolling backup (highest zero-padded save_<index>
+            # sorts last), else the legacy last_save. Gives the prompt one fixed name to diff save.json against
+            # regardless of which client shape produced the report.
+            newest_backup="$(ls "$report_dir"/save_*.json.gz 2>/dev/null | sort | tail -1 || true)"
+            if [ -n "$newest_backup" ] && [ -f "$newest_backup" ]; then
+              gunzip -c "$newest_backup" | jq '.' > triage_in/prev_save.json 2>/dev/null || gunzip -c "$newest_backup" > triage_in/prev_save.json
+            elif [ -f triage_in/last_save.json ]; then
+              cp triage_in/last_save.json triage_in/prev_save.json
+            fi
             if [ -f "$report_dir/commands.json" ]; then
               jq '.' "$report_dir/commands.json" > triage_in/commands.json 2>/dev/null || cp "$report_dir/commands.json" triage_in/commands.json
             fi
@@ -123,9 +134,16 @@ jobs:
               `meta.note` says "sent last save as current," the two saves are identical and this
               isn't a live snapshot.
 
-            - `triage_in/last_save.json` — the PREVIOUS on-disk save (the resume point).
+            - `triage_in/prev_save.json` — the DATING BASELINE: the newest prior on-disk snapshot
+              (the newest rolling backup, or, for older clients, the legacy single previous save).
               Authoritative for: dating the bug. Compare against `save.json` to find the wedge.
-              Absent for a brand-new session.
+              Absent for a brand-new session with no backups.
+
+            - `triage_in/save_<index>.json` — the FULL rolling backup set (0–5 older snapshots; may be
+              absent). Higher `<index>` = NEWER (`prev_save.json` is a copy of the highest one). Use these
+              to date the wedge more precisely: walk from the newest backup backward to the FIRST snapshot
+              in which the target entity is already broken. Each backup's authoritative sim-time is its own
+              `Meta.SavedSimTime`; the filename index only orders them.
 
             - `triage_in/commands.json` — the FULL since-launch session timeline: player commands,
               app lifecycle (pause/resume/focus/quit/low-memory), and `Save` checkpoint markers,
@@ -173,9 +191,9 @@ jobs:
             (villager/building id) and the observable symptom — as the symptom, not the cause.
 
             STEP 2 — TARGETED SAVE COMPARISON (highest-signal step; do this before any ./game
-            grepping). This is cheap ONLY when scoped to the entity from STEP 1: Grep BOTH saves
-            for just that entity's id and compare its fields — do NOT Read or compare the saves in
-            full.
+            grepping). This is cheap ONLY when scoped to the entity from STEP 1: Grep `save.json`
+            and `prev_save.json` for just that entity's id and compare its fields — do NOT Read or
+            compare the saves in full.
               - Confirm sim time advanced using the `Save` markers' decoded `savedSimTime` in
                 `commands.json` (plain doubles). If you must use the saves directly, compare the raw
                 `Meta.SavedSimTimeBits` Int64 values for EQUALITY (different bits = different time;
@@ -185,10 +203,13 @@ jobs:
                 sim time moved = the wedged entity. As a CONTROL, take the FIRST entity you notice
                 whose fields DID change — it proves the sim is not globally halted. Do not scan
                 exhaustively for a "clean" control; localization does not block on having one.
-              - DATE it: broken already in `last_save` => predates this session (the command window
+              - DATE it: broken already in `prev_save` => predates this session (the command window
                 is NOT the cause — rely on the comparison). Broken only in `save` => introduced in
-                the recent window (STEP 3).
-              If `last_save.json` is absent, work from `save.json` state alone and say so.
+                the recent window (STEP 3). To PINPOINT which prior session, walk the older
+                `save_<index>.json` backups newest→oldest and find the first one already showing the
+                wedge (each backup's `Meta.SavedSimTime` dates it).
+              If `prev_save.json` is absent (brand-new session, no backups), work from `save.json`
+              state alone and say so.
 
               >>> CHECKPOINT: once you can name even a CANDIDATE root cause, immediately Write a
               first draft of `comment.md` (Hypothesis + What's missing at minimum) before continuing.

@@ -4,7 +4,12 @@ This repository collects **auto-generated bug reports** for the Tidebound Unity 
 an issue plus attachments committed under `assets/<date>/<uuid>/`:
 
 - `save.json.gz` — the **current** game state at report time (gzip-compressed JSON).
-- `last_save.json.gz` — the **previous** on-disk save (gzip-compressed JSON; may be absent).
+- `save_<index>.json.gz` — the **rolling on-disk backups** (gzip-compressed JSON; 0–5 files, may be
+  absent): older snapshots kept ~5 app-open-minutes apart. The `<index>` is a zero-padded MONOTONIC
+  counter, so a higher index is newer; the authoritative sim-time is each backup's `Meta.SavedSimTime`.
+  To reconstruct the **current (buggy)** state offline, load the newest usable backup and replay the
+  `commands.json` timeline forward onto it. (Older clients instead send a single `last_save.json.gz` —
+  the previous on-disk save; treat it as one backup when present.)
 - `commands.json` — the **full session timeline** (plain JSON; may be absent): every player command, app
   pause/resume/focus/quit + low-memory event, and `Save` checkpoint marker, interleaved chronologically;
   each entry has `kind` (`command` | `lifecycle` | `save`), `name`, `simTime`, `utc`, `args`. Read between
