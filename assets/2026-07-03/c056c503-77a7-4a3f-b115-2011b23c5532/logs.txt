@@ -1,0 +1,20 @@
+[Log] [GameBootstrap] loaded save /var/mobile/Containers/Data/Application/67FD07BD-45FB-44EF-8BD0-327D4C03E6F7/Documents/save_1783012963194.json, savedSimTime=492126, elapsed=48398.529063
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.UIElements.UIElementsRuntimeUtility:RegisterEventSystem(Object)
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] [VillagerPortraitLeafView] No VillagerPortraitCoordinator set via Init()
+Tidebound.View.UI.Overlay.SelectionOverlayView:RefreshActionButtons()
+Tidebound.View.UI.Overlay.SelectionOverlayView:Bind(WorldObject)
+Tidebound.View.UI.Overlay.OverlayCoordinator:Refresh()
+Tidebound.View.UI.Overlay.OverlayCoordinator:HandleSelectionChanged(WorldObject, WorldObject, SelectionConfig)
+Tidebound.View.Managers.SelectionCoordinator:Select(WorldObject)
+Tidebound.View.UI.SelectionWindow.SelectionWindowView:OnClose()
+Tidebound.View.UI.Screens.ScreenCoordinator:CloseScreen()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
