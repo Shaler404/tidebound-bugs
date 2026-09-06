@@ -1,0 +1,26 @@
+[Log] [GameBootstrap] loaded save /storage/emulated/0/Android/data/com.alexslash.tidebound/files/save_1788659209823.json, savedSimTime=2090802,35, elapsed=97,733303
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.UIElements.UIElementsRuntimeUtility:RegisterEventSystem(Object)
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Exception] InvalidOperationException: SnapshotCloneContext: a Workstation referenced in Pass 2 was never registered in Pass 1 (missed re-point — see RESEARCH Pitfall 1).
+Tidebound.Model.Prediction.SnapshotCloneContext.Clone (Tidebound.Model.Behaviors.Workstation live) (at <00000000000000000000000000000000>:0)
+Tidebound.Model.Villager.CopyInto (Tidebound.Model.Villager target, Tidebound.Model.Prediction.SnapshotCloneContext ctx) (at <00000000000000000000000000000000>:0)
+Tidebound.Model.Prediction.SnapshotCloneContext.Clone (Tidebound.Model.GameContext live) (at <00000000000000000000000000000000>:0)
+Tidebound.Model.Prediction.PredictionService.KickWholeVillage () (at <00000000000000000000000000000000>:0)
+Tidebound.Model.Prediction.PredictionService.DrainMainThreadCallbacks () (at <00000000000000000000000000000000>:0)
+Tidebound.View.UI.Overlay.OverlayCoordinator.LateUpdate () (at <00000000000000000000000000000000>:0)
+
+[Exception] InvalidOperationException: SnapshotCloneContext: a Workstation referenced in Pass 2 was never registered in Pass 1 (missed re-point — see RESEARCH Pitfall 1).
+Tidebound.Model.Prediction.SnapshotCloneContext.Clone (Tidebound.Model.Behaviors.Workstation live) (at <00000000000000000000000000000000>:0)
+Tidebound.Model.Villager.CopyInto (Tidebound.Model.Villager target, Tidebound.Model.Prediction.SnapshotCloneContext ctx) (at <00000000000000000000000000000000>:0)
+Tidebound.Model.Prediction.SnapshotCloneContext.Clone (Tidebound.Model.GameContext live) (at <00000000000000000000000000000000>:0)
+Tidebound.Model.Prediction.PredictionService.KickWholeVillage () (at <00000000000000000000000000000000>:0)
+Tidebound.Model.Prediction.PredictionService.DrainMainThreadCallbacks () (at <00000000000000000000000000000000>:0)
+Tidebound.View.UI.Overlay.OverlayCoordinator.LateUpdate () (at <00000000000000000000000000000000>:0)
