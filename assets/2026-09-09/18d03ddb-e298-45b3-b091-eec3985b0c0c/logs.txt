@@ -1,0 +1,10 @@
+[Log] [GameBootstrap] loaded save /var/mobile/Containers/Data/Application/B8E2CE37-9243-4C5F-8F16-A71EBA4DE26A/Documents/save_1788958645976.json, savedSimTime=298,1, elapsed=2847,487444
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning] There can be only one active Event System.
+UnityEngine.UIElements.UIElementsRuntimeUtility:RegisterEventSystem(Object)
+
+[Log] [GameBootstrap] boot save written (firstLoad=False) — re-anchored for the next launch.
+Tidebound.View.Bootstrap.<BootSequence>d__18:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
